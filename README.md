@@ -10,7 +10,7 @@ Programs:
 - Reversing an Array
 - Finding the minimum and maximum values
 - Counting duplicate elements
-4. Factorial Checker (Recursion) 
+4. Factorial Calculator (Recursion) 
 
 
 Future Programs to add:
