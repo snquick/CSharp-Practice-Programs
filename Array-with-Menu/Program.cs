@@ -21,7 +21,6 @@ namespace Array_with_Menu
 
         private static bool MainMenu()
         {
-            //Console.Clear();
             Console.WriteLine("Welcome to Array Roulette! Select one of the options to see a different exercises. :)");
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1) Array Information & Tips");
@@ -49,16 +48,16 @@ namespace Array_with_Menu
                     DeleteElement();
                     return true;
                 case "4":
-                    // sorting
+                    SortingElement();
                     return true;
                 case "5":
-                    // reverse
+                    ReverseArray();
                     return true;
                 case "6":
-                    // min and max 
+                    MinandMaxElements();
                     return true;
                 case "7":
-                    // duplicates
+                    DuplicateElements();
                     return true;
                 case "8":
                     return false;
@@ -74,12 +73,105 @@ namespace Array_with_Menu
 
         private static void InsertElement()
         {
+            // creating the array to have five elements
+            string[] insertArray = new string[5];
 
+            Console.WriteLine("Please enter 1 value at a time to enter into the array");
+
+            // for loop to add each element
+            for(int i = 0; i < insertArray.Length; i++)
+            {
+                insertArray[i] = Console.ReadLine();
+
+            }
+
+            Console.WriteLine("");
+            Console.Write("Here is your array: ");
+
+            // I separated the first element of the list so that I can print a comma separating the following elements
+            // without the comma being at the end of the last element. This makes it look nicer
+
+            if (insertArray.Length >= 1)
+            {
+                Console.Write(insertArray[0]);
+            }
+
+            // prints each element added to the array
+            for (int i = 1; i < insertArray.Length; i++)
+            {
+                Console.Write(","+ " "+ insertArray[i]);
+            }
+
+            Console.WriteLine("");
         }
 
         private static void DeleteElement()
         {
+            // initilazing array and variables 
+            string[] deleteArray = {"a", "b", "c", "d", "e", "f"};
+            Random random = new Random();
+            int minValue = deleteArray.Min(i => i.Length);
+            int maxValue = deleteArray.Max(i => i.Length);
+
+            Console.Write("Original Array: ");
+
+            // printing array for the user to see before deletion process
+            for (int i = 0; i < deleteArray.Length; i++)
+            {
+                Console.Write(deleteArray[i]);
+                if (i < deleteArray.Length - 1)
+                {
+                    Console.Write(","+ " ");
+                }
+            }
+
+            // adding sleep method to make it dramatic hehe
+            Console.WriteLine("");
+            Console.WriteLine("Deleting random element in 3...");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("2...");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("1...");
+            Console.WriteLine("");
+
+            // select an element at random 
+            var randomDelete = random.Next(deleteArray.Length);
+
+            // tells the user which element is being deleted
+            Console.WriteLine($"Deleted element: {deleteArray[randomDelete]}");
+
+            // removes the element that was selected from randomDelete and makes the new array
+            deleteArray = deleteArray.Where(e => e != deleteArray[randomDelete]).ToArray();
+
+            Console.WriteLine("New Array: ");
+            Console.WriteLine(String.Join(",", deleteArray)); // String.join concatenates the elements and separates them using commas 
+            Console.WriteLine("");
 
         }
+        private static void SortingElement()
+        {
+
+
+
+        }
+
+        private static void ReverseArray()
+        {
+
+
+        }
+
+        private static void MinandMaxElements()
+        {
+
+
+        }
+
+        private static void DuplicateElements()
+        {
+
+
+        }
+
     }
 }
