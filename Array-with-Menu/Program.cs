@@ -27,7 +27,7 @@ namespace Array_with_Menu
             Console.WriteLine("2) Insert an Element");
             Console.WriteLine("3) Delete an Element");
             Console.WriteLine("4) Sorting into Ascending Order");
-            Console.WriteLine("5) Reversing an array");
+            Console.WriteLine("5) Reversing an Array");
             Console.WriteLine("6) Find min and max values");
             Console.WriteLine("7) Count duplicates");
             Console.WriteLine("8) Exit");
@@ -38,8 +38,7 @@ namespace Array_with_Menu
             switch (Console.ReadLine())
             {
                 case "1":
-                    // call function for array information
-                    Console.WriteLine("hi");
+                    ArrayInformation();
                     return true;
                 case "2":
                     InsertElement();
@@ -68,6 +67,31 @@ namespace Array_with_Menu
 
         private static void ArrayInformation()
         {
+            Console.WriteLine("*******************************************************************************************************");
+            Console.WriteLine("");
+
+            Console.WriteLine("Here's some basic information about arrays: ");
+
+            Console.WriteLine("Definition: An array is a collection of similar data elements stored at contiguous memory locations. " +
+                "It is the simplest data structure where each data element can be accessed directly by only using its index number.");
+            Console.WriteLine("");
+
+            Console.Write("Why you would need to use an array: If you need to store a large amolunt of daya of a similar type, it's important to use an array to do so." +
+                "This way, you can store all the elements within instead of declaring numerous variables for each value!");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            Console.WriteLine("Advantages: ");
+            Console.WriteLine("1) Arrays represent multiple data elements of the same type using a single name.");
+            Console.WriteLine("2) In an array, accessing or searching an element is easy by using the index number.");
+            Console.WriteLine("3) An array can be traversed easily just by incrementing the index by 1.");
+            Console.WriteLine("4) Arrays allocate memory in contiguous memory locations for all its data elements.");
+            Console.WriteLine("");
+
+            Console.WriteLine("*******************************************************************************************************");
+            Console.WriteLine("");
+
+
 
         }
 
@@ -152,13 +176,13 @@ namespace Array_with_Menu
         {
             int[] sortedArray = new int[] { 3, 1, 4, 5, 2 };
 
-            Console.WriteLine("Original Array: "+ String.Join(",", sortedArray)); // String.join concatenates the elements and separates them using commas         
+            Console.WriteLine("Original Array: "+ String.Join(",", sortedArray));        
             Console.WriteLine("");
 
             // Sorting method
             Array.Sort<int>(sortedArray, new Comparison<int> ((a, b) => a.CompareTo(b)));
             
-            Console.WriteLine("Sorted Array: " +String.Join(",", sortedArray)); // String.join concatenates the elements and separates them using commas         
+            Console.WriteLine("Sorted Array: " +String.Join(",", sortedArray)); 
             Console.WriteLine("");
 
         }
@@ -166,7 +190,7 @@ namespace Array_with_Menu
         private static void ReverseArray()
         {
             // initalizing variables and array
-            int[] reverseArray = new int[] {};
+            int[] reverseArray = new int[100];
             int size, i;
 
             // User input on size of array and scans next line
@@ -174,7 +198,7 @@ namespace Array_with_Menu
             size = Convert.ToInt32(Console.ReadLine());
 
             // User can pick the elements in the array 
-            Console.WriteLine("Enter elements in array: ");
+            Console.WriteLine("Enter numerical elements in array: ");
 
             for (i = 0; i < size; i++)
             {
@@ -185,24 +209,46 @@ namespace Array_with_Menu
 
             for (i = size - 1; i >= 0; i--)
             {
-                Console.WriteLine(String.Join(",", reverseArray)); // String.join concatenates the elements and separates them using commas 
+                Console.Write("\t" + reverseArray[i]);
             }
 
-            Console.ReadLine();
             Console.WriteLine("");
 
     }
 
         private static void MinandMaxElements()
         {
+            int[] minmaxArray = new int[] { 8, -10, -30, 0, 22, 344, 64, -1, 15};
 
+            // using max and min methods
+            Console.WriteLine("Array: " + String.Join(", ", minmaxArray)); // String.join concatenates the elements and separates them using commas
+                                                                                   // 
+            Console.WriteLine("Maximum Element: " + minmaxArray.Max());
+            Console.WriteLine("Minimum Element: " + minmaxArray.Min());
+            Console.WriteLine("");
 
         }
 
         private static void DuplicateElements()
         {
+            int[] duplicateArray = {9, 9, 10, 55, 2, 1, 4, 5, 55, 6, 7, 81, 7, 10, 55, 55, 7, 5};
 
+            // dictonary is a generic collection used to store key/value pairs. similar to a non-generic hashtable 
+            // dictionary is also dynamic which is useful -- more useful than a list in this situation due to taking less time to traverse
+            var dict = new Dictionary<int, int>(); 
 
+            // demonstrating original array for user
+            Console.WriteLine("Original Array: " + String.Join(", ", duplicateArray));     
+            Console.WriteLine("");
+
+            foreach (var value in duplicateArray) {
+                dict.TryGetValue(value, out int count); // if there are no duplicates, the key will not be found and the count will equal zero.
+                dict[value] = count + 1; // otherwise, once found, the count will increase every time another is found
+            }
+
+            foreach (var pair in dict)
+                Console.WriteLine("Value {0} occurred {1} times.", pair.Key, pair.Value);
+                Console.WriteLine("");
         }
 
     }
