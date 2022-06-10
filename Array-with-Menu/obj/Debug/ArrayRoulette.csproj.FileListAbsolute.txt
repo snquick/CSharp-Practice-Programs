@@ -1,0 +1,8 @@
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\bin\Debug\Array-with-Menu.exe.config
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\bin\Debug\Array-with-Menu.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\bin\Debug\Array-with-Menu.pdb
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\obj\Debug\ArrayRoulette.csproj.AssemblyReference.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\obj\Debug\ArrayRoulette.csproj.SuggestedBindingRedirects.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\obj\Debug\ArrayRoulette.csproj.CoreCompileInputs.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\obj\Debug\Array-with-Menu.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\Array-with-Menu\obj\Debug\Array-with-Menu.pdb
