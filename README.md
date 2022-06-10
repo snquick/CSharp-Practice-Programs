@@ -2,15 +2,15 @@
 Compilation of my C# practice exercises over basic algorithms and data structure concepts. 
 
 Programs:
-1. Calculating the sum of two values
-2. Swapping nummerical values 
+1. Calculating the sum of two values (Basic)
+2. Swapping nummerical values (Basic)
 3. Array Compilation Practice 
 - Inserting and Deleting Elements
 - Sorting Array into Ascending Order
 - Reversing an Array
 - Finding the minimum and maximum values
 - Counting duplicate elements
-4. Factorial Checker
+4. Factorial Checker (Recursion) 
 
 
 Future Programs to add:
