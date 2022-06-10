@@ -150,16 +150,48 @@ namespace Array_with_Menu
         }
         private static void SortingElement()
         {
+            int[] sortedArray = new int[] { 3, 1, 4, 5, 2 };
 
+            Console.WriteLine("Original Array: "+ String.Join(",", sortedArray)); // String.join concatenates the elements and separates them using commas         
+            Console.WriteLine("");
 
+            // Sorting method
+            Array.Sort<int>(sortedArray, new Comparison<int> ((a, b) => a.CompareTo(b)));
+            
+            Console.WriteLine("Sorted Array: " +String.Join(",", sortedArray)); // String.join concatenates the elements and separates them using commas         
+            Console.WriteLine("");
 
         }
 
         private static void ReverseArray()
         {
+            // initalizing variables and array
+            int[] reverseArray = new int[] {};
+            int size, i;
 
+            // User input on size of array and scans next line
+            Console.WriteLine("Please enter the desired size of your array: ");
+            size = Convert.ToInt32(Console.ReadLine());
 
-        }
+            // User can pick the elements in the array 
+            Console.WriteLine("Enter elements in array: ");
+
+            for (i = 0; i < size; i++)
+            {
+                reverseArray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Array in reverse order: ");
+
+            for (i = size - 1; i >= 0; i--)
+            {
+                Console.WriteLine(String.Join(",", reverseArray)); // String.join concatenates the elements and separates them using commas 
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("");
+
+    }
 
         private static void MinandMaxElements()
         {
