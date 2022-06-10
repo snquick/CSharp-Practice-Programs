@@ -29,10 +29,7 @@ namespace AddingNumbers
 
             // The ReadKey method will wait until the "q" button is clicked before closing out of the application
             while (Console.ReadKey().Key != ConsoleKey.Q) { }
-
-        
-
-
+      
         }
     }
 }
