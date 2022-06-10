@@ -10,7 +10,7 @@ Programs:
 - Reversing an Array
 - Finding the minimum and maximum values
 - Counting duplicate elements
-4.  Calculating Factorials
+4. Factorial Checker
 
 
 Future Programs to add:
