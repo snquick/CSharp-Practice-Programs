@@ -1,0 +1,8 @@
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\bin\Debug\AddingNumbers.exe.config
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\bin\Debug\AddingNumbers.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\bin\Debug\AddingNumbers.pdb
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\obj\Debug\AddingNumbers.csproj.AssemblyReference.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\obj\Debug\AddingNumbers.csproj.SuggestedBindingRedirects.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\obj\Debug\AddingNumbers.csproj.CoreCompileInputs.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\obj\Debug\AddingNumbers.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\AddingNumbers\obj\Debug\AddingNumbers.pdb
