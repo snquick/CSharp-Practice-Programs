@@ -1,0 +1,8 @@
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\bin\Debug\SwappingValues.exe.config
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\bin\Debug\SwappingValues.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\bin\Debug\SwappingValues.pdb
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\obj\Debug\SwappingValues.csproj.AssemblyReference.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\obj\Debug\SwappingValues.csproj.SuggestedBindingRedirects.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\obj\Debug\SwappingValues.csproj.CoreCompileInputs.cache
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\obj\Debug\SwappingValues.exe
+C:\Users\squic\Documents\github projects\CSharp-Practice-Programs\SwappingValues\obj\Debug\SwappingValues.pdb
