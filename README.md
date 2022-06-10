@@ -23,6 +23,7 @@ Future Programs to add:
 
 
 *Advanced programs will be in their own repositories. This repository is simply to practice common methods and algorithms.*
+
 Includes:
 C# Game Compilation (Tic tac toe, Chess, Snake)
 Management and Booking Systems
